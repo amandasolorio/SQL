@@ -1,0 +1,30 @@
+Create a clothing store database
+
+create table store (id integer primary key, item text, price integer, quantity integer, aisle text);
+
+insert into store values (1, "sweaters", 25, 5, 10);
+insert into store values (2, "shirts", 20, 10, 10);
+insert into store values (3, "pants", 35, 5, 15);
+insert into store values (4, "shoes", 65, 3, 3);
+insert into store values (5, "socks", 10, 5, 3);
+insert into store values (6, "hats", 15, 3, 12);
+insert into store values (7, "underwear", 15, 5, 14);
+insert into store values (8, "gloves", 10, 3, 22);
+insert into store values (9, "bras", 30, 5, 14);
+insert into store values (10, "scarves", 14, 2, 22);
+insert into store values (11, "tank tops", 15, 3, 10);
+insert into store values (12, "dresses", 60, 15, 11);
+insert into store values (13, "hoodies", 50, 7, 15);
+insert into store values (14, "beanies", 20, 2, 12);
+insert into store values (15, "sunglasses", 2, 15, 22);
+
+--display the database ordered by price
+select * from store
+order by price;
+
+--display the database for items less than or equal to 20 dollars
+select * from store
+where price <=20;
+
+
+
